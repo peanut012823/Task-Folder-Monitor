@@ -275,6 +275,7 @@ function TaskDetail({ task, updateTask, onBack }) {
               <span>Priority: <b>{task.priority}</b></span>
               {task.deadline && <span>Deadline: <b>{task.deadline}</b></span>}
             </div>
+            </div>
           </div>
           <button className="secondary" onClick={refresh} disabled={!task.sourceFolderPath || loading}><RefreshCw size={16}/> {loading ? "Scanning..." : "Refresh Scan"}</button>
         </div>
